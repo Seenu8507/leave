@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>LEAVE INFORMATION</h1>
+    </head>
+    <body style="position: relative; left: 444px; top: 200px; ">
+        <style>
+            .back-video{
+                position: absolute;        
+                bottom: 0;
+                z-index: -1;
+    
+            }
+        </style>
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+        <form action="leave.php" method="post" >
+        <div>
+         <label for="year" style="color:black; font-size: 20px" >choose year</label>
+            <select name="year" id="year" style="border-radius: 9px;">
+            <option value="1st year">1</option>
+            <option value="2st year">2</option>
+            <option value="3st year">3</option>
+            <option value="4st year">4</option>
+            </select>
+        </div><br>    
+        <div>
+          <label  style="color:black; font-size: 20px"  for="department"  required="">choose department</label>
+          <select name="department" id="department" style="border-radius: 9px;">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="EEE">EEE</option> 
+           </select>
+        </div><br><br>
+           <label for="day" required="" style="color:black; font-size: 20px">NO.OF DAYS :</label>
+           <input type="number" name="day"  id="day" style="border-radius: 9px;"></input><br><br>
+           <label style="color:black; font-size: 20px"  name="date" required="" id="date">DATE:</label>
+           <input type="date" name="date" id="date" style="border-radius: 9px;"></input><br><br>
+           <textarea placeholder="Reason" id="reason"   name="reason" style="height: 200px; width:290px; border-radius: 9px;"></textarea><br>
+           <input type="submit" id="submit" name="" style="position: relative;  left: 270px; border-radius: 9px;"></input><br><br>       
+        </div> 
+        </form>       
+    </body>
+</html>
